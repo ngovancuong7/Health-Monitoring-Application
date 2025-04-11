@@ -25,9 +25,39 @@
 ---
 
 ## 3. Screenshots
-<img src="https://raw.githubusercontent.com/ngovancuong7/Health-Monitoring-Application/main/screens/1.jpg" width="250"/>
-<img src="https://raw.githubusercontent.com/ngovancuong7/Health-Monitoring-Application/main/screens/2.jpg" width="250"/>
-<img src="https://raw.githubusercontent.com/ngovancuong7/Health-Monitoring-Application/main/screens/3.jpg" width="250"/>
+<!-- Hàng 1 -->
+<p float="left">
+  <img src="https://raw.githubusercontent.com/ngovancuong7/Health-Monitoring-Application/main/screens/1.jpg" width="160"/>
+  <img src="https://raw.githubusercontent.com/ngovancuong7/Health-Monitoring-Application/main/screens/2.jpg" width="160"/>
+  <img src="https://raw.githubusercontent.com/ngovancuong7/Health-Monitoring-Application/main/screens/3.jpg" width="160"/>
+  <img src="https://raw.githubusercontent.com/ngovancuong7/Health-Monitoring-Application/main/screens/4.jpg" width="160"/>
+  <img src="https://raw.githubusercontent.com/ngovancuong7/Health-Monitoring-Application/main/screens/5.jpg" width="160"/>
+</p>
+
+<!-- Hàng 2 -->
+<p float="left">
+  <img src="https://raw.githubusercontent.com/ngovancuong7/Health-Monitoring-Application/main/screens/6.jpg" width="160"/>
+  <img src="https://raw.githubusercontent.com/ngovancuong7/Health-Monitoring-Application/main/screens/7.jpg" width="160"/>
+  <img src="https://raw.githubusercontent.com/ngovancuong7/Health-Monitoring-Application/main/screens/8.jpg" width="160"/>
+  <img src="https://raw.githubusercontent.com/ngovancuong7/Health-Monitoring-Application/main/screens/9.jpg" width="160"/>
+  <img src="https://raw.githubusercontent.com/ngovancuong7/Health-Monitoring-Application/main/screens/10.jpg" width="160"/>
+</p>
+
+<!-- Hàng 3 -->
+<p float="left">
+  <img src="https://raw.githubusercontent.com/ngovancuong7/Health-Monitoring-Application/main/screens/11.jpg" width="160"/>
+  <img src="https://raw.githubusercontent.com/ngovancuong7/Health-Monitoring-Application/main/screens/12.jpg" width="160"/>
+  <img src="https://raw.githubusercontent.com/ngovancuong7/Health-Monitoring-Application/main/screens/13.jpg" width="160"/>
+  <img src="https://raw.githubusercontent.com/ngovancuong7/Health-Monitoring-Application/main/screens/14.jpg" width="160"/>
+  <img src="https://raw.githubusercontent.com/ngovancuong7/Health-Monitoring-Application/main/screens/15.jpg" width="160"/>
+</p>
+
+<!-- Hàng 4 -->
+<p float="left">
+  <img src="https://raw.githubusercontent.com/ngovancuong7/Health-Monitoring-Application/main/screens/16.jpg" width="160"/>
+  <img src="https://raw.githubusercontent.com/ngovancuong7/Health-Monitoring-Application/main/screens/17.jpg" width="160"/>
+  <img src="https://raw.githubusercontent.com/ngovancuong7/Health-Monitoring-Application/main/screens/18.jpg" width="160"/>
+</p>
 
 
 ## 4. Key Features

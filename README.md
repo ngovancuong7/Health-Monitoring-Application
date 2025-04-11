@@ -25,10 +25,10 @@
 ---
 
 ## 3. Screenshots
+<img src="https://raw.githubusercontent.com/ngovancuong7/Health-Monitoring-Application/main/screens/1.jpg" width="250"/>
+<img src="https://raw.githubusercontent.com/ngovancuong7/Health-Monitoring-Application/main/screens/2.jpg" width="250"/>
+<img src="https://raw.githubusercontent.com/ngovancuong7/Health-Monitoring-Application/main/screens/3.jpg" width="250"/>
 
-(📷 *Add your app screenshots here*)
-
----
 
 ## 4. Key Features
 

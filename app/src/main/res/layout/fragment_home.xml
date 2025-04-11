@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/course_stored_swipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.Fragment.HomeFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:padding="12dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#F4F1FA"
+                    android:elevation="3dp"
+                    app:cardCornerRadius="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:strokeWidth="0dp">
+
+                    <LinearLayout
+                        android:id="@+id/layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp">
+
+                            <com.google.android.material.progressindicator.CircularProgressIndicator
+                                android:id="@+id/circularProgressIndicator_home_step"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:progress="0"
+                                app:indicatorColor="@color/green"
+                                app:indicatorSize="160dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:trackColor="@color/green2"
+                                app:trackCornerRadius="8dp"
+                                app:trackThickness="18dp" />
+
+                            <TextView
+                                android:id="@+id/step_home"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@color/green"
+                                android:textSize="24sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toTopOf="@+id/step_goals_home"
+                                app:layout_constraintEnd_toEndOf="@+id/circularProgressIndicator_home_step"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toStartOf="@+id/circularProgressIndicator_home_step"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_chainStyle="packed" />
+
+                            <TextView
+                                android:id="@+id/step_goals_home"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mục tiêu: 0"
+                                android:textColor="@color/green2"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="@+id/circularProgressIndicator_home_step"
+                                app:layout_constraintEnd_toEndOf="@+id/circularProgressIndicator_home_step"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toStartOf="@+id/circularProgressIndicator_home_step"
+                                app:layout_constraintTop_toBottomOf="@+id/step_home" />
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="Calo"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toTopOf="@+id/linearProgressIndicator_calo_home"
+                                app:layout_constraintStart_toStartOf="@+id/linearProgressIndicator_calo_home"
+                                app:layout_constraintTop_toBottomOf="@+id/circularProgressIndicator_home_step" />
+
+                            <com.google.android.material.progressindicator.LinearProgressIndicator
+                                android:id="@+id/linearProgressIndicator_calo_home"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="32dp"
+                                android:progress="0"
+                                app:indicatorColor="@color/teal_a200"
+                                app:layout_constraintEnd_toStartOf="@+id/linearProgressIndicator_time_home"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/circularProgressIndicator_home_step"
+                                app:trackColor="@color/cyan_50"
+                                app:trackCornerRadius="8dp"
+                                app:trackThickness="8dp" />
+
+                            <TextView
+                                android:id="@+id/calo_home"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="@+id/linearProgressIndicator_calo_home"
+                                app:layout_constraintTop_toBottomOf="@+id/linearProgressIndicator_calo_home" />
+
+                            <TextView
+                                android:id="@+id/calo_golas_home"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:text="/0"
+                                android:textStyle="bold"
+                                app:layout_constraintBaseline_toBaselineOf="@+id/calo_home"
+                                app:layout_constraintStart_toEndOf="@+id/calo_home" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Thời gian"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toTopOf="@+id/linearProgressIndicator_time_home"
+                                app:layout_constraintStart_toStartOf="@+id/linearProgressIndicator_time_home" />
+
+                            <com.google.android.material.progressindicator.LinearProgressIndicator
+                                android:id="@+id/linearProgressIndicator_time_home"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="32dp"
+                                android:layout_marginEnd="16dp"
+                                android:progress="0"
+                                app:indicatorColor="@color/pink_300"
+                                app:layout_constraintEnd_toStartOf="@+id/linearProgressIndicator_km_home"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toEndOf="@+id/linearProgressIndicator_calo_home"
+                                app:layout_constraintTop_toBottomOf="@+id/circularProgressIndicator_home_step"
+                                app:trackColor="@color/pink_50"
+                                app:trackCornerRadius="8dp"
+                                app:trackThickness="8dp" />
+
+                            <TextView
+                                android:id="@+id/time_home"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="@+id/linearProgressIndicator_time_home"
+                                app:layout_constraintTop_toBottomOf="@+id/linearProgressIndicator_time_home" />
+
+                            <TextView
+                                android:id="@+id/time_goals_home"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:text="/0"
+                                android:textStyle="bold"
+                                app:layout_constraintBaseline_toBaselineOf="@+id/time_home"
+                                app:layout_constraintStart_toEndOf="@+id/time_home" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Km"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toTopOf="@+id/linearProgressIndicator_km_home"
+                                app:layout_constraintStart_toStartOf="@+id/linearProgressIndicator_km_home" />
+
+                            <com.google.android.material.progressindicator.LinearProgressIndicator
+                                android:id="@+id/linearProgressIndicator_km_home"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="32dp"
+                                android:progress="0"
+                                app:indicatorColor="@color/light_blue_a400"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toEndOf="@+id/linearProgressIndicator_time_home"
+                                app:layout_constraintTop_toBottomOf="@+id/circularProgressIndicator_home_step"
+                                app:trackColor="@color/light_blue_100"
+                                app:trackCornerRadius="8dp"
+                                app:trackThickness="8dp" />
+
+                            <TextView
+                                android:id="@+id/km_home"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="@+id/linearProgressIndicator_km_home"
+                                app:layout_constraintTop_toBottomOf="@+id/linearProgressIndicator_km_home" />
+
+                            <TextView
+                                android:id="@+id/km_goals_home"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:text="/0"
+                                android:textStyle="bold"
+                                app:layout_constraintBaseline_toBaselineOf="@+id/km_home"
+                                app:layout_constraintStart_toEndOf="@+id/km_home" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/text_step2"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_gravity="center_vertical"-->
+            <!--                android:gravity="center_horizontal"-->
+            <!--                android:text="0"-->
+            <!--                android:textColor="@color/purple_700"-->
+            <!--                android:textSize="50sp" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Bài tập"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/view_all_popular"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginRight="7dp"-->
+                <!--                    android:layout_weight="1"-->
+                <!--                    android:gravity="end"-->
+                <!--                    android:text="Xem thêm"-->
+                <!--                    android:textColor="@color/purple_700"-->
+                <!--                    android:textSize="16sp" />-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/exercise_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                android:id="@+id/exercise_progress"
+                style="@style/SpinKitView.Small"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:visibility="gone"
+                app:SpinKit_Color="@color/blue" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

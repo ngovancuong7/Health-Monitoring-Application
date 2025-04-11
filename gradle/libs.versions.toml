@@ -1,0 +1,74 @@
+[versions]
+agp = "8.4.0"
+kotlin = "1.9.0"
+coreKtx = "1.9.0"
+junit = "4.13.2"
+androidxTestExtJunit = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+material = "1.10.0"
+constraintlayout = "2.1.4"
+retrofit = "2.9.0"
+gson = "2.10.1"
+swiperefreshlayout = "1.1.0"
+circleimageview = "3.1.0"
+mpandroidchart = "3.1.0"
+zxing = "4.1.0"
+spinKit = "1.4.0"
+timesSquare = "1.6.5"
+numberPicker = "2.4.13"
+expandableLayout = "2.9.2"
+materialCalendarview = "2.0.0"
+glide = "4.16.0"
+waveProgressBar = "1.0.0"
+threetenabp = "1.2.0"
+workRuntime = "2.7.0-alpha05"
+circularProgressButton = "1.4"
+firebaseBom = "32.8.0"
+firebaseAuth = "22.3.1"
+playServicesAuth = "21.0.0"
+glideCompiler = "4.16.0"
+androidSupport = "27.0.2" # Để sau này loại bỏ dễ dàng hơn
+
+[libraries]
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk8", version.ref = "kotlin" }
+core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
+junit = { module = "junit:junit", version.ref = "junit" }
+androidx-test-ext-junit = { module = "androidx.test.ext:junit", version.ref = "androidxTestExtJunit" }
+espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "espressoCore" }
+appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+material = { module = "com.google.android.material:material", version.ref = "material" }
+constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
+retrofit-converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+annotation = { module = "androidx.annotation:annotation", version = "1.7.1" }
+lifecycle-livedata-ktx = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version = "2.7.0" }
+lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version = "2.7.0" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+swiperefreshlayout = { module = "androidx.swiperefreshlayout:swiperefreshlayout", version.ref = "swiperefreshlayout" }
+circleimageview = { module = "de.hdodenhof:circleimageview", version.ref = "circleimageview" }
+mpandroidchart = { module = "com.github.PhilJay:MPAndroidChart", version.ref = "mpandroidchart" }
+zxing-android-embedded = { module = "com.journeyapps:zxing-android-embedded", version.ref = "zxing" }
+zxing-core = { module = "com.google.zxing:core", version = "3.3.3" }
+spin-kit = { module = "com.github.ybq:Android-SpinKit", version.ref = "spinKit" }
+times-square = { module = "com.squareup:android-times-square", version = "1.6.5@aar" }
+number-picker = { module = "io.github.ShawnLin013:number-picker", version = "2.4.13" }
+expandable-layout = { module = "com.github.cachapa:ExpandableLayout", version.ref = "expandableLayout" }
+material-calendarview = { module = "com.github.prolificinteractive:material-calendarview", version.ref = "materialCalendarview" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+wave-progress-bar = { module = "com.github.cjhandroid:WaveProgressBar", version.ref = "waveProgressBar" }
+threetenabp = { module = "com.jakewharton.threetenabp:threetenabp", version = "1.2.0" }
+work-runtime = { module = "androidx.work:work-runtime", version = "2.7.0-alpha05" }
+circular-progress-button = { module = "com.github.dmytrodanylyk:circular-progress-button", version.ref = "circularProgressButton" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+firebase-auth = { module = "com.google.firebase:firebase-auth", version.ref = "firebaseAuth" }
+play-services-auth = { module = "com.google.android.gms:play-services-auth", version.ref = "playServicesAuth" }
+glide-compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "glideCompiler" }
+android-support-v4 = { module = "com.android.support:support-v4", version.ref = "androidSupport" }
+android-support-appcompat-v7 = { module = "com.android.support:appcompat-v7", version.ref = "androidSupport" }
+android-support-support-media-compat = { module = "com.android.support:support-media-compat", version.ref = "androidSupport" }
+android-support-support-compat = { module = "com.android.support:support-compat", version.ref = "androidSupport" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }

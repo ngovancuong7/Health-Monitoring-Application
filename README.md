@@ -154,6 +154,13 @@ Open the **Goals** screen to configure:
 ### 📈 View Statistics
 - The **Home** screen displays progress summaries and health metrics all in one place.
 
+## 7. Contact Information
+
+For questions, feedback, or collaboration, feel free to reach out:
+
+- 📧 **Ngô Văn Cường** – [cuongngo.27062004@gmail.com](mailto:cuongngo.27062004@gmail.com)  
+- 📧 **Nguyễn Hoàng Sang** – [sanghoangnguyen116@gmail.com](mailto:sanghoangnguyen116@gmail.com)
+
 ---
 
 > ✨ *Stay healthy, stay consistent – with HealthTrack!*

@@ -106,24 +106,13 @@ Set and track personal fitness goals:
 ## 5. Technologies Used
 
 ### 🎯 Frontend
-- React Native – Cross-platform mobile framework.
-- React Navigation – Screen navigation.
-- Redux / Context API – State management.
-- Lottie / GIF Animations – Dynamic workout visuals.
-- Custom Components – Minimalistic, user-friendly UI.
+- XML
 
 ### 🎯 Backend & Data
 - Firebase Authentication – Account login & registration.
 - Firebase Firestore – Stores user data, health metrics, workouts.
 - Firebase Storage – Profile image storage.
 - Firebase Realtime Database (optional) – Real-time updates.
-
-### 🎯 Visualization
-- Chart.js / Victory Native – Health data graphs (steps, heart rate, BMI).
-- Animated Progress Circles / Bars – Visual goal tracking.
-
-### 🧪 Testing (Optional)
-- Jest / React Native Testing Library – Component and logic unit testing.
 
 ---
 
